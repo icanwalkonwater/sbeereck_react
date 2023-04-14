@@ -60,7 +60,7 @@ const AccountList = () => {
       <Box m={1}>
         <TextField
           value={query}
-          onChange={(e) => handleSearch(e.target.value ?? "")}
+          onSubmit={(e) => handleSearch(e.target.value ?? "")}
           placeholder="Chercher"
           variant="standard"
           fullWidth
